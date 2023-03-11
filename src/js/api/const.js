@@ -13,7 +13,7 @@ fetchPhoto(){
     const parametr = new URLSearchParams({
     query: this.query,
     page: this.page,
-    per_page: 5,
+    per_page: 30,
     client_id: this.#KEY
     })
 

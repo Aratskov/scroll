@@ -22,10 +22,10 @@ function searchPhoto(event) {
         ref.loadMoreEl.classList.remove('is-hidden');
         ref.gallery.insertAdjacentHTML('beforeend', markupPhoto(data));
       } else {
-        event.target.reset();
         Notify.failure(
-          "Sorry, there are no images matching your search query. Please try again"
+          'Sorry, there are no images matching your search query. Please try again'
         );
+        event.target.reset();
       }
     })
     .catch(console.log);
